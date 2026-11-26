@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#18251f">
+  <meta name="description" content="A thoughtfully imagined neighborhood restaurant celebrating seasonal ingredients and warm hospitality. A self-initiated web design concept by Philip Victor.">
+  <title>Field &amp; Fire — A Restaurant Concept</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="wordmark" href="#home" aria-label="Field and Fire home">FIELD <span>&amp;</span> FIRE</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu"><span></span><span></span></button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#story">Our story</a><a href="#menu">Menu</a><a href="#visit">Visit</a>
+        <a class="nav-reserve" href="#reserve">Reserve a table <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=2200&amp;q=85" alt="An intimate restaurant dining room set for dinner">
+      <div class="hero-shade"></div>
+      <div class="hero-content shell">
+        <p class="eyebrow"><span></span> A neighborhood table, thoughtfully set</p>
+        <h1 id="hero-title">Good food.<br><em>Good company.</em></h1>
+        <p class="hero-intro">Seasonal ingredients, honest cooking, and a place to slow down around the table.</p>
+        <a class="button button-light" href="#menu">Explore the menu <span>↓</span></a>
+      </div>
+      <div class="hero-note"><span>01</span> A SAMPLE RESTAURANT CONCEPT</div>
+    </section>
+
+    <section class="intro section shell" id="story">
+      <div class="section-kicker"><span>01 / THE STORY</span><i></i></div>
+      <div class="intro-grid">
+        <h2>Rooted in the<br>season. <em>Made to share.</em></h2>
+        <div class="intro-copy"><p>Field &amp; Fire is an independent restaurant concept built around a simple idea: thoughtful food tastes better when it brings people together.</p><p>Our sample menu follows the seasons, celebrates vibrant ingredients, and leaves room for one more at the table.</p><a class="under-link" href="#visit">A little more about us <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="feature" aria-label="Restaurant atmosphere">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=2000&amp;q=85" alt="Warmly lit restaurant interior with tables ready for guests" loading="lazy">
+      <div class="feature-caption"><span>Made for lingering.</span><span>FIELD &amp; FIRE / 2026</span></div>
+    </section>
+
+    <section class="menu-section section shell" id="menu">
+      <div class="section-kicker"><span>02 / FROM THE KITCHEN</span><i></i></div>
+      <div class="menu-heading"><div><p class="eyebrow dark-eyebrow">A SAMPLE SEASONAL MENU</p><h2>Simple things,<br><em>done with care.</em></h2></div><p class="menu-note">A few house favorites to give you a taste.<br>Our menu changes with the season.</p></div>
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" id="tab-small" type="button" role="tab" aria-selected="true" aria-controls="panel-small" data-menu="small">To begin</button>
+        <button class="menu-tab" id="tab-mains" type="button" role="tab" aria-selected="false" aria-controls="panel-mains" data-menu="mains" tabindex="-1">From the fire</button>
+        <button class="menu-tab" id="tab-sweet" type="button" role="tab" aria-selected="false" aria-controls="panel-sweet" data-menu="sweet" tabindex="-1">Something sweet</button>
+      </div>
+      <div class="menu-panel" id="panel-small" role="tabpanel" aria-labelledby="tab-small">
+        <article class="dish"><div><h3>Charred carrots</h3><p>Whipped labneh, herbs, toasted seeds</p></div><span>₦8,500</span></article>
+        <article class="dish"><div><h3>Warm sourdough</h3><p>Brown butter, smoked sea salt</p></div><span>₦6,000</span></article>
+        <article class="dish"><div><h3>Market greens</h3><p>Citrus, avocado, crisp shallots</p></div><span>₦9,000</span></article>
+      </div>
+      <div class="menu-panel" id="panel-mains" role="tabpanel" aria-labelledby="tab-mains" hidden>
+        <article class="dish"><div><h3>Fire-roasted chicken</h3><p>Preserved lemon, pan jus, garden herbs</p></div><span>₦22,000</span></article>
+        <article class="dish"><div><h3>Slow-cooked short rib</h3><p>Silky mash, charred onion, red wine</p></div><span>₦28,000</span></article>
+        <article class="dish"><div><h3>Wild mushroom rice</h3><p>Roasted mushrooms, parmesan, thyme</p></div><span>₦18,000</span></article>
+      </div>
+      <div class="menu-panel" id="panel-sweet" role="tabpanel" aria-labelledby="tab-sweet" hidden>
+        <article class="dish"><div><h3>Olive oil cake</h3><p>Seasonal fruit, softly whipped cream</p></div><span>₦8,000</span></article>
+        <article class="dish"><div><h3>Dark chocolate tart</h3><p>Salted caramel, toasted hazelnut</p></div><span>₦9,000</span></article>
+        <article class="dish"><div><h3>House-made sorbet</h3><p>Ask us what is in season today</p></div><span>₦6,500</span></article>
+      </div>
+      <p class="menu-disclaimer">Concept menu and sample prices for portfolio demonstration.</p>
+    </section>
+
+    <section class="visit-section" id="visit">
+      <div class="visit-image"><img src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&amp;fit=crop&amp;w=1300&amp;q=85" alt="Fresh seasonal ingredients prepared for a shared meal" loading="lazy"></div>
+      <div class="visit-copy"><p class="eyebrow dark-eyebrow">03 / COME ON IN</p><h2>Save a seat.<br><em>Stay a while.</em></h2><p>Imagine the clink of glasses, something good on the table, and nowhere else you need to be.</p><div class="hours"><div><span>Tuesday — Thursday</span><b>5:00 pm — 10:00 pm</b></div><div><span>Friday — Sunday</span><b>12:00 pm — 11:00 pm</b></div><div><span>Monday</span><b>Taking a little rest</b></div></div><a class="button button-dark" href="#reserve">Request a table <span>↗</span></a><p class="concept-note">Restaurant details shown are illustrative for this concept project.</p></div>
+    </section>
+
+    <section class="reservation section shell" id="reserve">
+      <div class="section-kicker"><span>04 / YOUR TABLE</span><i></i></div>
+      <div class="reservation-grid"><div><p class="eyebrow dark-eyebrow">A NOTE TO THE TEAM</p><h2>Let's make<br><em>a night of it.</em></h2><p class="reservation-copy">Share a few details to prepare a reservation request. This demo form opens an email draft; no booking is made automatically.</p></div>
+        <form class="reservation-form" id="reservation-form">
+          <label for="guest-name">Your name</label><input id="guest-name" name="name" autocomplete="name" placeholder="First and last name" required>
+          <label for="guest-email">Email address</label><input id="guest-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <div class="form-row"><div><label for="guest-date">Preferred date</label><input id="guest-date" name="date" type="date" required></div><div><label for="guest-count">Guests</label><select id="guest-count" name="guests"><option>2 guests</option><option>1 guest</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></div></div>
+          <button class="button button-dark submit-button" type="submit">Prepare request <span>↗</span></button><p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-main shell"><a class="wordmark footer-mark" href="#home">FIELD <span>&amp;</span> FIRE</a><p>Good food is better<br>when it's shared.</p><a href="#home">Back to top ↑</a></div><div class="footer-bottom shell"><span>INDEPENDENT RESTAURANT CONCEPT</span><span>Designed and built by Philip Victor · <span id="year"></span></span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
